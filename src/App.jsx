@@ -2,14 +2,12 @@ import React, {Component} from 'react';
 import './App.css';
 import Counter from './Components/counter/counter.jsx';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <div>
         <Counter initialValue={0} />
       </div>
     );
-  }
 }
 
 
