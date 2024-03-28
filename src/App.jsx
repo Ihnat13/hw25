@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
-import Counter from './Components/counter/counter.jsx';
 
 const App = () => {
     return (
-      <div>
-        <Counter initialValue={0} />
+      <div className='counter'>
+      <h2>Counter</h2>
+      <p>Count: {count}</p>
+      <div className='counter-container'>
+        <button style={{ alignSelf: 'flex-start' }} onClick={decrement}>-</button>
+        <button style={{ alignSelf: 'flex-end' }} onClick={increment}>+</button>
       </div>
+      <button onClick={reset}>Reset</button>
+    </div>
     );
 }
 
